@@ -144,7 +144,11 @@ kable(res_a) %>%
   kable_styling() %>% 
   column_spec(1, underline = TRUE) %>% 
   row_spec(1:6, monospace = TRUE) %>%
-  column_spec(2, color = "white",
+  column_spec(2, 
+              color = "white",
               background = spec_color(res_ord$ERA[1:6], end = 0.7, direction = -1),
               popover = paste("am:", res_ord$ERA[1:8])) %>% 
   footnote(general = "data taken from baseballsavant.mlb.com")
+
+
+  

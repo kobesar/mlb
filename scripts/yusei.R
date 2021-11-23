@@ -4,6 +4,8 @@ library(rjson)
 library(lubridate)
 library(directlabels)
 library(ggrepel)
+library(baseballr)
+library(kableExtra)
 
 txt <- read.delim("../data/yusei") %>% 
   data.frame()
@@ -118,3 +120,34 @@ plot <- yusei %>%
 ggsave("koochieev.png", plot, width = 10, height = 6, units = "in")
 
 write.csv(yusei, "yusei.csv")
+
+koochie <- scrape_statcast_savant_pitcher(
+  start_date = as.Date("2021-04-01"),
+  end_date = Sys.Date(),
+  pitcherid = 579328
+)
+
+koochie %>% 
+  group_by(at_bat_number, pitch_name) %>% 
+  summarize(n = n()) %>% 
+  ggplot() +
+  geom_line(aes(x = at_bat_number, y = n, color = pitch_name))
+
+koochie %>% 
+  mutate(down = bat_score > fld_score) %>% 
+  group_by(pitch_name, down) %>% 
+  summarize(xba = mean(estimated_ba_using_speedangle, na.rm = T)) %>% 
+  pivot_wider(names_from = pitch_name, values_from = xba) 
+
+kooch_tab <- koochie %>% 
+  mutate(down_count = balls < strikes) %>% 
+  group_by(pitch_name, down_count) %>% 
+  summarize(xba = mean(estimated_ba_using_speedangle, na.rm = T)) %>% 
+  pivot_wider(names_from = pitch_name, values_from = xba) %>% 
+  select(-6)
+
+kooch_tab %>% 
+  kable() %>% 
+  kable_styling() %>% 
+  column_spec(2, background = ifelse(kooch_tab))
+  
