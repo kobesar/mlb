@@ -4,5 +4,6 @@ I've stored the many scripts I've used to create visualizations with MLB data fr
 
 I focused on making visuals that analyze the performance of the Mariners (duh I'm a Mariners fan).
 
-Here is an example of Paul Sewald's pitching heat map which shows his slump in September!
+Here is an example of Paul Sewald's pitching heat map.
+
 ![Paul Sewald Slump](https://github.com/kobesar/mlb/blob/master/vis/pauldense.png)
