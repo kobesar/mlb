@@ -1,6 +1,7 @@
 library(baseballr)
 library(tidyverse)
 library(kableExtra)
+library(randomForest)
 
 player_ids <- read.csv("https://www.smartfantasybaseball.com/PLAYERIDMAPCSV")
 
@@ -84,3 +85,15 @@ paul_tab %>%
   column_spec(3, 
               color = "white",
               background = spec_color(option = "D", paul_tab$Slider, end = 0.7, direction = -1))
+
+paul$hr <- paul$events == "home_run"
+
+paul_clean <- paul %>% 
+  filter(!is.na(release_spin_rate)) %>% 
+  select(hr, release_speed, release_pos_x, release_pos_y, release_pos_z, release_spin_rate)
+
+paul_clean[is.na(paul_clean)] <- FALSE
+
+randomForest(hr ~ release_speed + release_pos_x + release_pos_y + release_pos_z + release_spin_rate, data = paul_clean)
+
+lm(hr ~ release_speed + release_pos_x + release_pos_y + release_pos_z + release_spin_rate, data = paul_clean) %>% summary()
