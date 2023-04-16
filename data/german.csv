@@ -1,0 +1,79 @@
+,inning,pitch,call,pitch_type,speed,rpm
+0,1,1,Ball,FF,92.6,2595
+1,1,2,Swinging Strike,CU,82.1,2820
+2,1,3,Ball,FF,91.8,2722
+3,1,4,Ball,FF,91.2,2651
+4,1,5,Swinging Strike,CH,85.5,2457
+5,1,6,Swinging Strike,CH,84.9,2396
+6,1,1,Called Strike,FF,93.0,2664
+7,1,2,Called Strike,FF,92.9,2615
+8,1,3,Foul,CH,87.9,2641
+9,1,4,Swinging Strike,CU,85.3,2750
+10,1,1,Called Strike,CU,82.6,2740
+11,1,2,Swinging Strike,FF,93.3,2592
+12,1,3,Ball,CU,84.2,2879
+13,1,4,Swinging Strike,CH,88.2,2453
+14,2,1,Foul,CU,80.0,2524
+15,2,2,Called Strike,FF,92.5,2578
+16,2,3,Swinging Strike,FF,92.8,2524
+17,2,1,Called Strike,CU,83.3,2769
+18,2,2,Ball,CU,83.5,2828
+19,2,3,Foul Tip,FF,92.3,2574
+20,2,4,Ball,CU,83.8,2727
+21,2,5,"In play, out(s)",SI,92.4,2505
+22,2,1,Called Strike,FF,93.0,2660
+23,2,2,"In play, out(s)",SI,93.1,2552
+24,3,1,Ball,FF,90.9,2633
+25,3,2,Ball,FF,90.4,2615
+26,3,3,Swinging Strike,CU,79.9,2750
+27,3,4,Swinging Strike,CU,80.8,2877
+28,3,5,Swinging Strike,CU,81.9,2860
+29,3,1,Called Strike,FF,91.3,2650
+30,3,2,"In play, out(s)",FF,91.6,2575
+31,3,1,Foul,CH,85.4,2404
+32,3,2,Foul Bunt,FF,92.3,2572
+33,3,3,Ball,CU,82.0,2780
+34,3,4,Swinging Strike,CU,84.0,2750
+35,4,1,Foul,CU,80.8,2541
+36,4,2,"In play, out(s)",CU,82.2,2709
+37,4,1,Ball,CH,85.5,2363
+38,4,2,Called Strike,SI,90.6,2440
+39,4,3,Ball,FF,92.1,2636
+40,4,4,Foul,CU,80.5,2570
+41,4,5,Foul,FF,92.9,2480
+42,4,6,Ball,CU,84.4,2774
+43,4,7,Foul,CH,85.8,2424
+44,4,8,Foul,CU,82.6,2559
+45,4,9,Swinging Strike,CU,82.4,2595
+46,4,1,Foul,FF,94.3,2571
+47,4,2,Ball,FF,93.6,2590
+48,4,3,Swinging Strike,SI,93.7,2484
+49,4,4,Swinging Strike,CU,84.3,2649
+50,5,1,Called Strike,FF,91.6,2366
+51,5,2,Ball,CH,85.8,2342
+52,5,3,Foul,FF,92.0,2468
+53,5,4,Swinging Strike,CU,84.3,2723
+54,5,1,Called Strike,CU,84.3,2690
+55,5,2,Foul,SI,93.3,2373
+56,5,3,Ball,FF,93.8,2560
+57,5,4,Swinging Strike,FF,94.0,2664
+58,5,1,Called Strike,CU,83.3,2659
+59,5,2,"In play, out(s)",CU,85.1,2775
+60,6,1,Swinging Strike,CH,83.9,2396
+61,6,2,"In play, out(s)",FF,91.1,2499
+62,6,1,Ball,CU,80.9,2780
+63,6,2,Ball,CH,83.6,2408
+64,6,3,Called Strike,CU,80.7,2724
+65,6,4,"In play, no out",FF,91.6,2529
+66,6,1,"In play, no out",CU,82.4,2750
+67,6,1,Ball,CU,80.8,2593
+68,6,2,"In play, out(s)",CH,84.8,2446
+69,6,1,Called Strike,SI,93.2,2428
+70,6,2,"In play, out(s)",SI,93.6,2401
+71,7,1,Ball,CH,84.7,2393
+72,7,2,Ball,CH,85.1,2342
+73,7,3,Called Strike,CU,81.3,2609
+74,7,4,Foul,SI,91.7,2393
+75,7,5,Foul,CH,85.8,2527
+76,7,6,Called Strike,CU,83.7,2631
+77,7,1,"In play, no out",CH,85.8,2484
